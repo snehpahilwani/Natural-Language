@@ -89,6 +89,7 @@ print "Total number of utterances not containing the word show: ", a_not_word + 
 print "P(u is from Speaker 1): ", dialogueTurns["A"] / (dialogueTurns["A"] + dialogueTurns["B"])
 print "P(u is from Speaker 2): ", dialogueTurns["B"] / (dialogueTurns["A"] + dialogueTurns["B"])
 print "P(u contains \"show\" | u is from Speaker 1): ", count_a /  (dialogueTurns["A"])
+print "P(u contains \"show\" | u is from Speaker 2): ", count_b /  (dialogueTurns["B"])
 print "P(u being from Speaker 1 | u contains \"show\"): ", count_a /  (count_a + count_b)
 print "P(u beding from Speaker 1 | u does not contain \"show\"): ", a_not_word /  (a_not_word + b_not_word)
 print "P(u being from Speaker 2 | u contains \"show\"): ", count_b /  (count_a + count_b)
